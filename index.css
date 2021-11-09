@@ -19,14 +19,22 @@ body{
     flex-direction: column;
     font-size: 3vh;
     text-align: left;
-}
-
-.home{
-    background-image: url(./circle-01.png);
-    background-size: 90vh;
+    background-image: url(./circle\ 0.5.png);
+    background-size: 70vh;
     background-repeat: no-repeat;
+    margin-top: 25vh;
+    margin-left: 5vh;
 }
 
-.home h1 {
-    font-family: 'Ubuntu', sans-serif;
+
+
+.tekst{
+    margin-top: 10vh;
+    margin-left: 9vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+#hello{
+    color: #f9bb9f;
+    
 }
