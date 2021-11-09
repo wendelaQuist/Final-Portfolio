@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #FFFAFA;
+    font-family: 'Raleway', sans-serif;
+    height: 800vh;
+    color: #20160F;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.home{
+    background-image: url(./circle-01.png);
+    background-size: 90vh;
+    background-repeat: no-repeat;
+}
+
+.home h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
