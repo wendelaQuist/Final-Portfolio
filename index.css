@@ -19,3 +19,12 @@ body{
     background-repeat: no-repeat;
     z-index: -1;
 }
+
+.about-me{
+    height: 100vh;
+    background-image: url(./about\ me\ 2.0-01.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
