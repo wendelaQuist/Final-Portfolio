@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 800vh;
 }
 
 body{
@@ -10,19 +9,6 @@ body{
     font-family: 'Raleway', sans-serif;
     color: #20160F;
     height: 800vh;
-    
-}
-
-.navbar{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 1vh;
-    z-index: 1;
-}
-
-.links{
-    grid-column: 4;
-    justify-content: space-evenly;
 }
 
 .home{
