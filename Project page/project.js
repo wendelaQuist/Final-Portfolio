@@ -23,6 +23,7 @@ document.addEventListener('keydown', function(event) {
     if(event.key === 'a' ){
         if(parseInt(duck.style.left)  >= 0 ){
             duck.style.left = parseInt(duck.style.left) - move + "px";
+            document.getElementById("eend").src="./left duck.png";
         }
             
     }
@@ -30,6 +31,7 @@ document.addEventListener('keydown', function(event) {
     if(event.key === 'd' ){
         if(parseInt(duck.style.left) < x ){
             duck.style.left = parseInt(duck.style.left) + move + "px";
+            document.getElementById("eend").src="./duck.png";
         }
     }
 
