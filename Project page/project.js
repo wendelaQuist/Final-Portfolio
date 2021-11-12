@@ -2,21 +2,24 @@ var duck = document.querySelector('.duck');
 
 let move = 20;
 
-var img = document.querySelector("#eend");
+var img = document.querySelector('#eend');
 var mywidth = img.clientWidth;
-let x = screen.width - mywidth;
-let y = screen.height;
+var myheight = img.clientHeight;
+
+let x = innerWidth - mywidth;
+let y = innerHeight - myheight;
 
 
 
 window.addEventListener("load", () => {
-    duck.style.position = "absolute";
+    duck.style.position = "relative";
     duck.style.left = 0;
-    duck.style.top = '200vh'//(200*(screen.height/100))+'px';
+    duck.style.top = 0;
+    duck.style.padding = "4vh";
 });
 
 document.addEventListener('keydown', function(event) {
-    console.log(mywidth);
+    console.log(duck.style.top);
     if(event.key === 'a' ){
         if(parseInt(duck.style.left)  >= 0 ){
             duck.style.left = parseInt(duck.style.left) - move + "px";
@@ -31,15 +34,16 @@ document.addEventListener('keydown', function(event) {
     }
 
     if(event.key === 'w' ){
-        if(parseInt(duck.style.top) >= 2*y ){
+        if(parseInt(duck.style.top) >= 20){
             duck.style.top = parseInt(duck.style.top) - move + "px";
         }
 
     }
 
     if(event.key === 's' ){
+        if(parseInt(duck.style.top) <= y){
         duck.style.top = parseInt(duck.style.top) + move + "px";
-        
+        }
     }  
 
 })

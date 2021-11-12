@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body{
@@ -9,24 +11,35 @@ body{
     font-family: 'Raleway', sans-serif;
     color: #20160F;
     height: 300vh;
-    width: 100%;
-    overflow-x: hidden;
+    width: auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    scroll-snap-align: start;
+    height: 100vh;
 }
 
 
 .parallax {
-    background-image: url(./duck-01.png);
-    height: 100vh; 
+    background-image: url(./duck.png); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 40%;
 }
 
 .style{
-    height:100vh;
-    background-color:rgba(120, 216, 216, 0.2) ;
+    background-image: url(./center\ background-01.png);
     font-size:24px;
-    padding: 40vh 25vh;
+    padding: 25vh 50vh;
 }
 
