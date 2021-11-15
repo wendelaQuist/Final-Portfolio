@@ -1,7 +1,26 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body{
+  background-color: #FFFAFA;
+  font-family: 'Raleway', sans-serif;
+  color: #20160F;
+  height: 300vh;
+  width: auto;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 ul {

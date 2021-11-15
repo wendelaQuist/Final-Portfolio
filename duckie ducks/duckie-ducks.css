@@ -5,7 +5,7 @@ section{
 
 
 .parallax {
-    background-image: url(./background\ duck-01-01.png); 
+    background-image: url(./background\ duck\ scroll\ down-01.png); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,3 +18,12 @@ section{
     padding: 25vh 50vh;
 }
 
+.duck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duck img{
+    cursor: pointer;
+}
