@@ -1,0 +1,59 @@
+.LO{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "button";
+    border-radius: 18px;
+    background-color: #FFFAFA;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    text-align: start;
+}
+
+.card-image{
+    grid-area: image;
+    background: url(./duck-ia-01.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.LO .card-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+    color: #324b4b;
+}
+
+.LO .card-text p {
+    color: #324b4b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.LO .button{
+    grid-area: button;
+    background-color: #324b4b;
+    border-radius: 18px;
+    color: #FFFAFA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
